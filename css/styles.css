@@ -10123,7 +10123,8 @@ section.resume-section .resume-section-content {
 }
 
 .wrapper {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
