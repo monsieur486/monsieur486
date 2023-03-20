@@ -10124,9 +10124,9 @@ section.resume-section .resume-section-content {
 
 .wrapper {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: center;
 }
 
 .wrapper .icon {
@@ -10139,7 +10139,6 @@ section.resume-section .resume-section-content {
   height: 80px;
   font-size: 3rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
