@@ -10183,9 +10183,9 @@ section.resume-section .resume-section-content {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
+.wrapper .tooltiphover:hover,
+.wrapper .tooltiphover:hover .tooltip,
+.wrapper .tooltiphover:hover .tooltip::before {
   background: #0652a8;
   color: #ffffff;
 }
