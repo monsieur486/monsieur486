@@ -10127,6 +10127,7 @@ section.resume-section .resume-section-content {
   justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
+  margin-right: 50px;
 }
 
 .wrapper .icon {
