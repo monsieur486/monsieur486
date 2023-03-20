@@ -10124,7 +10124,7 @@ section.resume-section .resume-section-content {
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
   margin-right: 20px;
