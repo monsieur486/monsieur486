@@ -1,1 +1,0 @@
-docker run -d --name http-mr486 -p 2024:80 site-mr486
