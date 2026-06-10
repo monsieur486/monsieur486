@@ -109,8 +109,9 @@ Ordre validé en maquette :
    - **GestoMS** — vitrine ★ : générateur de plateforme microservices complète
      (Eureka, Gateway WebFlux, Keycloak/OAuth2, blacklist JWT Redis, RabbitMQ, batch,
      WebSocket, Spring Boot Admin). Lien GitHub. Ligne ⚡ « Conçu & itéré avec Claude Code ».
-   - **Tarot Des Amis** — app déployée en prod : scores temps réel WebSocket, UI mobile-first
-     (Spring Boot · Thymeleaf · WebSocket · Docker). Lien GitHub + lien démo si public.
+   - **Tarot Des Amis** — app déployée en prod sur **https://tda.mr486.com** : scores temps
+     réel WebSocket, UI mobile-first (Spring Boot · Thymeleaf · WebSocket · Docker).
+     Lien GitHub **+ lien « démo live »** vers tda.mr486.com.
      Ligne ⚡ « Front-end abordé grâce à l'IA ».
    - **gestozip** — démo : arborescence de fichiers + téléchargement ZIP (Spring Boot · REST).
    - **Projets de formation OpenClassrooms** : liste compacte avec liens (microservices,
@@ -179,8 +180,7 @@ Pas de framework de test pour un site statique ; vérification manuelle structur
 
 - **Visibilité réelle des dépôts** : confirmer lesquels sont publics/présentables avant
   de les lier (certains projets perso anciens ne doivent pas être mis en avant).
-- **Démo Tarot Des Amis** : l'URL de prod (`tda.tartempion.fr` vue dans le README) est-elle
-  publique et stable ? Sinon, lien GitHub seul.
+- **Démo Tarot Des Amis** : démo live confirmée → **https://tda.mr486.com** (à lier).
 - **Duplication contenu** site/CV : `data/projets.js` partagé vs contenu dupliqué.
 - **CV sombre vs clair à l'impression** : trancher (défaut : clair imprimable).
 - **Font Awesome** : conserver vs remplacer par SVG (perf).
