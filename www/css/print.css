@@ -1,0 +1,49 @@
+/* ============================================================
+   CV imprimable A4 — version claire (lisibilité encre + ATS)
+   ============================================================ */
+:root {
+  --ink:    #1f2937;
+  --soft:   #4b5563;
+  --line:   #d1d5db;
+  --green:  #15803d;
+  --blue:   #1d4ed8;
+  --ia:     #7c3aed;
+  --mono: 'JetBrains Mono', Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--sans); color: var(--ink); line-height: 1.5; background: #e5e7eb; }
+
+.cv {
+  width: 210mm; min-height: 297mm; margin: 0 auto; background: #fff;
+  padding: 16mm 16mm; display: grid; grid-template-columns: 62mm 1fr; gap: 10mm;
+}
+
+/* Colonne gauche */
+.cv__side { font-size: 9.5pt; }
+.cv__name { font-size: 22pt; font-weight: 800; line-height: 1.05; color: var(--ink); }
+.cv__name span { color: var(--green); }
+.cv__title { font-family: var(--mono); color: var(--soft); font-size: 9.5pt; margin: 4px 0 14px; }
+.cv__photo { width: 34mm; height: 34mm; border-radius: 50%; object-fit: cover; margin-bottom: 12px; }
+.cv__side h2 { font-size: 9pt; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); margin: 14px 0 6px; }
+.cv__side ul { list-style: none; }
+.cv__side li { margin-bottom: 3px; }
+.cv__contact a { color: var(--ink); text-decoration: none; }
+.cv__ia { color: var(--ia); }
+
+/* Colonne droite */
+.cv__main { font-size: 9.5pt; }
+.cv__main h2 { font-size: 10pt; letter-spacing: 1px; text-transform: uppercase; color: var(--blue); border-bottom: 1px solid var(--line); padding-bottom: 3px; margin: 0 0 8px; }
+.cv__section { margin-bottom: 12px; }
+.cv__pitch { color: var(--soft); margin-bottom: 12px; }
+.cv__item { margin-bottom: 8px; }
+.cv__item h3 { font-size: 9.5pt; }
+.cv__item .meta { color: var(--soft); font-size: 8.5pt; }
+.cv__item p { color: var(--soft); }
+.cv__ianote { color: var(--ia); font-size: 8.5pt; }
+
+@media print {
+  body { background: #fff; }
+  .cv { margin: 0; box-shadow: none; }
+  @page { size: A4; margin: 0; }
+}
