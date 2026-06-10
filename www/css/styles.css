@@ -187,3 +187,15 @@ h1, h2, h3 { color: var(--text); line-height: 1.15; font-weight: 800; }
 .formation-projects { list-style: none; display: flex; flex-direction: column; gap: 12px; }
 .formation-projects li { font-size: .9rem; color: var(--text-mute); padding-left: 16px; border-left: 2px solid var(--border-2); }
 @media (max-width: 720px) { .projects-grid { grid-template-columns: 1fr; } }
+
+/* ---- Timeline (expériences & formations) ---- */
+.timeline { display: flex; flex-direction: column; gap: 26px; }
+.xp { display: grid; grid-template-columns: 130px 1fr; gap: 18px; }
+.xp__date { font-family: var(--mono); color: var(--orange); font-size: .85rem; padding-top: 3px; }
+.xp__body h3 { font-size: 1.05rem; }
+.xp__org { color: var(--blue); font-size: .9rem; margin: 2px 0 8px; }
+.xp__desc { font-size: .9rem; color: var(--text-mute); }
+@media (max-width: 640px) {
+  .xp { grid-template-columns: 1fr; gap: 4px; }
+  .xp__date { padding-top: 0; }
+}
