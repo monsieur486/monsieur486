@@ -208,3 +208,8 @@ h1, h2, h3 { color: var(--text); line-height: 1.15; font-weight: 800; }
 .footer__links a { color: var(--text-mute); font-size: 1.4rem; }
 .footer__links a:hover { color: var(--green); }
 .footer__copy { font-size: .8rem; color: var(--text-mute); font-family: var(--mono); }
+
+/* ---- Accessibilité : focus clavier visible ---- */
+a:focus-visible, .btn:focus-visible, .topnav__toggle:focus-visible {
+  outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px;
+}
