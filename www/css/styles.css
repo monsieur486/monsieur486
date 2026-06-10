@@ -213,3 +213,17 @@ h1, h2, h3 { color: var(--text); line-height: 1.15; font-weight: 800; }
 a:focus-visible, .btn:focus-visible, .topnav__toggle:focus-visible {
   outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px;
 }
+
+/* ---- Avatar hero ---- */
+.hero__avatar {
+  float: right;
+  width: 132px; height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-2);
+  box-shadow: 0 0 0 4px rgba(126, 231, 135, .10);
+  margin: 4px 0 16px 28px;
+}
+@media (max-width: 640px) {
+  .hero__avatar { float: none; display: block; width: 110px; height: 110px; margin: 0 0 18px; }
+}
