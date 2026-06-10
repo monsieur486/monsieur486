@@ -154,3 +154,17 @@ h1, h2, h3 { color: var(--text); line-height: 1.15; font-weight: 800; }
 .hero__social { display: flex; gap: 16px; margin-top: 20px; font-size: 1.4rem; }
 .hero__social a { color: var(--text-mute); }
 .hero__social a:hover { color: var(--green); }
+
+/* ---- Compétences ---- */
+.skills { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 8px; }
+.skills__col--ia {
+  background: linear-gradient(180deg, rgba(28,20,41,.6), transparent);
+  border: 1px solid var(--ia-border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.skills__title { font-size: 1rem; margin-bottom: 12px; }
+.skills__title--back { color: var(--blue); }
+.skills__title--ia { color: var(--ia); }
+.skills__ia-text { margin-top: 16px; font-size: .9rem; color: var(--text-soft); }
+@media (max-width: 720px) { .skills { grid-template-columns: 1fr; } }
