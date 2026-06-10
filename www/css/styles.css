@@ -168,3 +168,22 @@ h1, h2, h3 { color: var(--text); line-height: 1.15; font-weight: 800; }
 .skills__title--ia { color: var(--ia); }
 .skills__ia-text { margin-top: 16px; font-size: .9rem; color: var(--text-soft); }
 @media (max-width: 720px) { .skills { grid-template-columns: 1fr; } }
+
+/* ---- Réalisations ---- */
+.project {
+  background: var(--surface);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.project--feature { margin-bottom: 16px; }
+.project--feature .project__head { display: flex; align-items: center; gap: 12px; }
+.project__star { margin-left: auto; color: var(--green); font-size: .8rem; font-family: var(--mono); white-space: nowrap; }
+.project h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.project__desc { font-size: .9rem; color: var(--text-mute); margin-bottom: 12px; }
+.project__links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; font-size: .85rem; font-family: var(--mono); }
+.projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.projects-subtitle { font-size: 1rem; color: var(--blue); margin: 32px 0 14px; }
+.formation-projects { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.formation-projects li { font-size: .9rem; color: var(--text-mute); padding-left: 16px; border-left: 2px solid var(--border-2); }
+@media (max-width: 720px) { .projects-grid { grid-template-columns: 1fr; } }
