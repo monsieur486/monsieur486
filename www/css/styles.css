@@ -146,7 +146,7 @@ h1, h2, h3 { color: var(--text); line-height: 1.15; font-weight: 800; }
 .hero__cursor { color: var(--green); animation: blink 1.1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .hero__cursor { animation: none; } }
-.hero__pitch { max-width: 620px; margin: 22px 0; color: var(--text-soft); }
+.hero__pitch { max-width: 620px; margin: 22px 0; color: var(--text-soft); text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
 .hero__contact { display: flex; flex-wrap: wrap; gap: 20px; font-family: var(--mono); font-size: .85rem; color: var(--text-mute); }
 .hero__contact a { color: var(--text-mute); }
