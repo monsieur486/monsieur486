@@ -153,6 +153,11 @@ Inchangé : `docker-compose.yaml` build l'image Apache (`httpd`) et monte `./www
 Aucun build front. `update.sh` (git pull + docker compose up) reste valable.
 Vérifier que `cv.html` et les nouveaux assets sont bien copiés dans l'image.
 
+> **Note (2026-11-16)** : `update.sh` a été supprimé du dépôt. Le site est servi sur la VM `pro`
+> par un `httpd:2.4` officiel qui monte en lecture seule le clone `/opt/sites/mr486/www`.
+> Déployer revient à `sudo git pull --ff-only` dans `/opt/sites/mr486`, sans reconstruction ni
+> redémarrage.
+
 ## 8. Tests & vérification
 
 Pas de framework de test pour un site statique ; vérification manuelle structurée :

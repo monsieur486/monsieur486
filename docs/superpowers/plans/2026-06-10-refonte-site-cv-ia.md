@@ -1174,6 +1174,10 @@ git commit -m "chore: vérification déploiement Docker (cv.html + assets servis
 
 > **Déploiement réel (par Laurent, hors plan)** : `./update.sh` (git pull + docker compose up -d).
 > Penser à vérifier au passage le problème SSL constaté sur `mr486.com` (certificat / conteneur).
+>
+> **Note (2026-11-16)** : `update.sh` a été supprimé du dépôt. Le déploiement se fait désormais
+> sur la VM `pro` par `sudo git pull --ff-only` dans `/opt/sites/mr486`, clone monté en lecture
+> seule dans un `httpd:2.4` officiel.
 
 ---
 
